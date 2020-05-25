@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDD8E1"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/ttt"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/image"
+            android:elevation="10dp"
+            android:src="@drawable/de"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Smoke And Mirrors"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_repeat_one_black_24dp"
+            tools:ignore="HardcodedText"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Imagine Dragons Smoke+Mirrors "
+            android:textColor="#808080"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <SeekBar
+
+            android:id="@+id/seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seek"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:text="0:00"
+            android:textColor="#000"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seek"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:text="4:00"
+            android:textColor="#000"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/ic_skip_next_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/ic_pause_circle_filled_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:layout_alignStart="@+id/play"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_skip_previous_black_24dp"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+</ScrollView>
